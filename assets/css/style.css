@@ -4,17 +4,18 @@
    * COLORS
    */
 
-  --gold-crayola: hsl(38, 61%, 73%);
+  --gold-crayola: hsl(38deg 67.43% 58.91%);
   --quick-silver: hsla(0, 0%, 65%, 1);
   --davys-grey: hsla(30, 3%, 34%, 1);
-  --smoky-black-1: hsla(40, 12%, 5%, 1);
-  --smoky-black-2: hsla(30, 8%, 5%, 1);
-  --smoky-black-3: hsla(0, 3%, 7%, 1);
-  --eerie-black-1: hsla(210, 4%, 9%, 1);
-  --eerie-black-2: hsla(210, 4%, 11%, 1);
-  --eerie-black-3: hsla(180, 2%, 8%, 1);
-  --eerie-black-4: hsla(0, 0%, 13%, 1);
-  --white: hsla(0, 0%, 100%, 1);
+  --smoky-black-1: hsl(0deg 0% 100%);
+  --smoky-black-2: hsl(0deg 1.97% 83.13%);
+  --smoky-black-3: hsl(0deg 5.1% 89.21%);
+  --eerie-black-1: hsl(210deg 1.16% 86.46%);
+  --eerie-black-2: hsl(0deg 0% 74.8%);
+  --eerie-black-3: hsl(0deg 0.84% 44.51%);
+  --eerie-black-4: hsl(0deg 0% 9.45%);
+  --white: hsl(0deg 0% 0%);
+  --white-black: hsl(0deg 0% 100%);
   --white-alpha-20: hsla(0, 0%, 100%, 0.2);
   --white-alpha-10: hsla(0, 0%, 100%, 0.1);
   --black: hsla(0, 0%, 0%, 1);
@@ -99,7 +100,7 @@
 
 }
 
-  /**
+/**
    *dark-mode 
    */
 
@@ -120,13 +121,14 @@
   --eerie-black-3: hsla(180, 2%, 8%, 1);
   --eerie-black-4: hsla(0, 0%, 13%, 1);
   --white: hsla(0, 0%, 100%, 1);
+  --white-black: hsl(0, 0%, 100%);
   --white-alpha-20: hsla(0, 0%, 100%, 0.2);
   --white-alpha-10: hsla(0, 0%, 100%, 0.1);
   --black: hsla(0, 0%, 0%, 1);
   --black-alpha-80: hsla(0, 0%, 0%, 0.8);
   --black-alpha-15: hsla(0, 0%, 0%, 0.15);
 
-  
+
 }
 
 
@@ -698,7 +700,9 @@ body.nav-active {
 .topbar {
   display: none;
 }
-
+.topbar-item {
+  color: var(--white-black);
+}
 
 
 
@@ -753,12 +757,14 @@ body.nav-active {
   transform-origin: left;
   animation: menuBtn 400ms ease-in-out alternate infinite;
 }
+
 @media(max-width:991px) {
-  .logo img{
+  .logo img {
     height: 100px;
     width: auto;
   }
 }
+
 @keyframes menuBtn {
   0% {
     transform: scaleX(1);
@@ -843,6 +849,7 @@ body.nav-active {
 }
 
 .navbar-link .span {
+  color: var(--white-black);
   transition: var(--transition-1);
 }
 
@@ -988,6 +995,7 @@ body.nav-active {
 
 .hero-text {
   margin-block: 10px 40px;
+  color: var(--white-black);
 }
 
 .hero .btn {
@@ -1052,6 +1060,7 @@ body.nav-active {
 
 .hero .slider-item.active .hero-title {
   animation-delay: 1000ms;
+  color: var(--white-black);
 }
 
 .hero .slider-item.active .hero-text {
@@ -1342,26 +1351,31 @@ body.nav-active {
   pointer-events: all;
 }
 
-@media(max-width:991px){
+@media(max-width:991px) {
   .Gallery-img img {
     width: 100%;
     height: 100%;
   }
+
   .overlay h3 {
     margin-top: 25px;
     margin-bottom: 10px;
   }
+
   .overlay a span {
     font-size: var(--fontSize-label-2);
   }
+
   .Gallery .btn {
     margin-inline: auto;
     margin-block-start: auto;
   }
+
   .overlay-btn {
-    display:block;
+    display: block;
   }
-  .overlay-btn .btn{
+
+  .overlay-btn .btn {
     margin-top: 10px;
   }
 
@@ -1369,7 +1383,7 @@ body.nav-active {
    * HEADER
    */
 
-  .header .logo{
+  .header .logo {
     display: none;
   }
 }
@@ -1389,6 +1403,11 @@ body.nav-active {
   font-size: 7rem;
   font-family: var(--fontFamily-forum);
   line-height: 0.7em;
+  color: var(--white-black);
+}
+
+.testi-text{
+  color: var(--white-black);
 }
 
 .testi .wrapper {
@@ -1604,7 +1623,7 @@ textarea.input-field {
 .footer-brand {
   position: relative;
   padding: 50px 40px;
-  background: var(--smoky-black-1) url("../images/footer-form-bg.png");
+  background: var(--black) url("../images/footer-form-bg.png");
   background-position: center top;
   background-repeat: repeat;
 }
@@ -1858,10 +1877,11 @@ textarea.input-field {
     display: block;
     margin-inline-start: auto;
   }
-  .header .logo{
+
+  .header .logo {
     display: none;
   }
-  
+
 
 
   /**
@@ -2030,7 +2050,7 @@ textarea.input-field {
 
   .reservation .input-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;   
+    grid-template-columns: 1fr 1fr;
     column-gap: 20px;
   }
 
@@ -2215,7 +2235,7 @@ textarea.input-field {
     display: grid;
     /* grid-template-columns: 1fr 0.5fr; */
   }
-  
+
 
 
 
@@ -2308,11 +2328,11 @@ textarea.input-field {
     max-width: unset;
   }
 
-  .header .logo-1{
+  .header .logo-1 {
     display: none;
   }
 
-  .header .logo{
+  .header .logo {
     display: block;
   }
 
@@ -2475,7 +2495,7 @@ textarea.input-field {
     margin-inline: auto;
   }
 
-  
+
 
 
 
