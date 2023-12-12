@@ -752,7 +752,7 @@ body.nav-active {
 .nav-open-btn .line {
   width: 30px;
   height: 2px;
-  background-color: var(--white);
+  background-color: var(--white-black);
   margin-block: 4px;
   transform-origin: left;
   animation: menuBtn 400ms ease-in-out alternate infinite;
@@ -762,6 +762,9 @@ body.nav-active {
   .logo img {
     height: 100px;
     width: auto;
+  }
+  .navbar-link .span {
+    color: var(--white);
   }
 }
 
