@@ -752,7 +752,7 @@ body.nav-active {
 .nav-open-btn .line {
   width: 30px;
   height: 2px;
-  background-color: var(--white);
+  background-color: var(--white-black);
   margin-block: 4px;
   transform-origin: left;
   animation: menuBtn 400ms ease-in-out alternate infinite;
@@ -763,6 +763,7 @@ body.nav-active {
     height: 100px;
     width: auto;
   }
+
 }
 
 @keyframes menuBtn {
@@ -849,7 +850,6 @@ body.nav-active {
 }
 
 .navbar-link .span {
-  color: var(--white-black);
   transition: var(--transition-1);
 }
 
@@ -1873,6 +1873,11 @@ textarea.input-field {
     top: 0;
   }
 
+    .navbar-item .span {
+    color: var(--white);
+    font-weight: var(--weight-bold);
+  }
+
   .header .btn {
     display: block;
     margin-inline-start: auto;
@@ -2354,6 +2359,10 @@ textarea.input-field {
 
   .navbar-item {
     border-block-start: none;
+  }
+
+  .navbar-item .span {
+    color: var(--white-black);
   }
 
   .navbar .separator {
