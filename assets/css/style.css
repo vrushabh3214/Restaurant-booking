@@ -23,12 +23,6 @@
   --black-alpha-15: hsla(0, 0%, 0%, 0.15);
 
   /**
-   *logo 
-   */
-  
-  --beyond-logo: url('../images/Beyond\ -logos_transparent.png');
-
-  /**
    * GRADIENT COLOR
    */
 
@@ -134,11 +128,6 @@
   --black-alpha-80: hsla(0, 0%, 0%, 0.8);
   --black-alpha-15: hsla(0, 0%, 0%, 0.15);
 
-/**
-   *logo 
-   */
-  
-   --beyond-logo: url('../images/Beyond_-logos.png');
 
 }
 
@@ -838,10 +827,6 @@ body.nav-active {
   max-width: max-content;
   margin-inline: auto;
   margin-block-end: 60px;
-}
-
-.navbar .logo-2{
-  background-image: var(--beyond-logo);
 }
 
 .navbar-list {
