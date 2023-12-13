@@ -77,9 +77,11 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
 /**
  *light & darc-mode
  */
+
 (function () {
   [...document.querySelectorAll(".control")].forEach(button => {
       button.addEventListener("click", function() {
@@ -90,7 +92,7 @@ window.addEventListener("scroll", function () {
       })
   });
   document.querySelector(".theme-btn").addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
+      document.body.classList.toggle("light-mode");
   })
 })();
 
@@ -184,3 +186,4 @@ window.addEventListener("mousemove", function (event) {
   }
 
 });
+

@@ -21,6 +21,8 @@
     -fontawesome
    -->
   <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
 
   <!-- 
     - custom css link
@@ -299,8 +301,7 @@
           <h2 class="headline-1 section-title">We Offer Top Notch</h2>
 
           <p class="section-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys
-            standard dummy text ever.
+            Indulge in our restaurant's pride – top-notch dishes by skilled chefs, crafted with the finest local ingredients. Our diverse menu showcases exceptional flavors in signature dishes.
           </p>
 
           <ul class="grid-list">
@@ -318,10 +319,10 @@
                 <div class="card-content">
 
                   <h3 class="title-4 card-title">
-                    <a href="#">Breakfast</a>
+                    <a href="#">Breakfast <br> lunch | dinner</a>
                   </h3>
 
-                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+                  <!-- <a href="#" class="btn-text hover-underline label-2">View Menu</a> -->
 
                 </div>
 
@@ -344,7 +345,7 @@
                     <a href="#">Appetizers</a>
                   </h3>
 
-                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+                  <!-- <a href="#" class="btn-text hover-underline label-2">View Menu</a> -->
 
                 </div>
 
@@ -367,7 +368,7 @@
                     <a href="#">Drinks</a>
                   </h3>
 
-                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+                  <!-- <a href="#" class="btn-text hover-underline label-2">View Menu</a> -->
 
                 </div>
 
@@ -396,23 +397,21 @@
 
             <p class="label-2 section-subtitle" id="about-label">Our Story</p>
 
-            <h2 class="headline-1 section-title">Every Flavor Tells a Story</h2>
+            <h2 class="headline-1 section-title">"Unlock The Perfect Dining Experience"</h2>
 
             <p class="section-text">
-              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-              industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled
-              it to make a type specimen book It has survived not only five centuries, but also the leap into.
+              an invitation to explore culinary excellence at our restaurant. Delight in top-notch dishes crafted by skilled chefs using premium, locally sourced ingredients. Our diverse menu showcases signature dishes renowned for exceptional flavors. Amidst a delightful ambiance and visually stunning presentations, we extend an invitation to join us on a culinary journey, promising a premium dining experience that transcends expectations and unlocks the door to culinary perfection.
             </p>
 
             <div class="contact-label">Book Through Call</div>
 
             <a href="tel:+914001234567" class="body-1 contact-number hover-underline">+91 (400) 123 4567</a>
 
-            <a href="#" class="btn btn-primary">
+            <!-- <a href="#" class="btn btn-primary">
               <span class="text text-1">Read More</span>
 
               <span class="text text-2" aria-hidden="true">Read More</span>
-            </a>
+            </a> -->
 
           </div>
 
@@ -426,9 +425,9 @@
                 class="w-100">
             </div>
 
-            <div class="abs-img abs-img-2 has-before">
+            <!-- <div class="abs-img abs-img-2 has-before">
               <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
-            </div>
+            </div> -->
 
           </figure>
 
@@ -442,7 +441,7 @@
         - #SPECIAL DISH
       -->
 
-      <section class="special-dish text-center">
+      <!-- <section class="special-dish text-center">
 
         <div class="special-dish-banner">
           <img src="./assets/images/e3daalbxzkun1xzqtxhb.webp" width="940" height="900" loading="lazy"
@@ -482,7 +481,7 @@
 
         <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
 
-      </section>
+      </section> -->
 
 
       <!-- 
@@ -503,13 +502,13 @@
                 <div class="Gallery-img">
                   <img src="assets/images/9.png" alt="menu_1" width="100%" height="100vh">
                   <div class="overlay">
-                    <h3>Zest House</h3>
+                    <h3 id="hotel_name">Zest House</h3>
                     <div class="overlay-btn">
                       <a href="https://maps.app.goo.gl/E7ThgtCcghd4sgMg9" target="_blank" class="btn btn-primary">
                         <span class="text text-1">Location</span>
                         <span class="text text-2">Location</span>
                       </a>
-                      <a href="#Booking" class="btn btn-primary">
+                      <a href="#Booking" class="btn btn-primary" onclick="return getDetails('Zest House')">
                         <span class="text text-1">Book table</span>
                         <span class="text text-2">Book table</span>
                       </a>
@@ -530,7 +529,7 @@
                         <span class="text text-1">Location</span>
                         <span class="text text-2">Location</span>
                       </a>
-                      <a href="#Booking" class="btn btn-primary">
+                      <a href="#Booking" class="btn btn-primary"  onclick="return getDetails('Kansar Restaurant')">
                         <span class="text text-1">Book table</span>
                         <span class="text text-2">Book table</span>
                       </a>
@@ -551,7 +550,7 @@
                         <span class="text text-1">Location</span>
                         <span class="text text-2">Location</span>
                       </a>
-                      <a href="#Booking" class="btn btn-primary">
+                      <a href="#Booking" class="btn btn-primary" onclick="return getDetails('3Seventy Kitchen')">
                         <span class="text text-1">Book table</span>
                         <span class="text text-2">Book table</span>
                       </a>
@@ -572,7 +571,7 @@
                         <span class="text text-1">Location</span>
                         <span class="text text-2">Location</span>
                       </a>
-                      <a href="#Booking" class="btn btn-primary">
+                      <a href="#Booking" class="btn btn-primary" onclick="return getDetails('Thyme & Whisk Surat')">
                         <span class="text text-1">Book table</span>
                         <span class="text text-2">Book table</span>
                       </a>
@@ -593,7 +592,7 @@
                         <span class="text text-1">Location</span>
                         <span class="text text-2">Location</span>
                       </a>
-                      <a href="#Booking" class="btn btn-primary">
+                      <a href="#Booking" class="btn btn-primary" onclick="return getDetails('Vintage Asia')">
                         <span class="text text-1">Book table</span>
                         <span class="text text-2">Book table</span>
                       </a>
@@ -614,7 +613,7 @@
                         <span class="text text-1">Location</span>
                         <span class="text text-2">Location</span>
                       </a>
-                      <a href="#Booking" class="btn btn-primary">
+                      <a href="#Booking" class="btn btn-primary"  onclick="return getDetails('Ninis Kitchen')">
                         <span class="text text-1">Book table</span>
                         <span class="text text-2">Book table</span>
                       </a>
@@ -662,10 +661,10 @@
           </div>
 
           <div class="profile">
-            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Sam Jhonson"
+            <img src="./assets/images/testi-avatar.jpeg" width="100" height="100" loading="lazy" alt="Hensi Ranpariya"
               class="img">
 
-            <p class="label-2 profile-name">Sam Jhonson</p>
+            <p class="label-2 profile-name">Hensi Ranpariya</p>
           </div>
 
         </div>
@@ -701,29 +700,15 @@
                 <div class="icon-wrapper">
                   <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-                  <select name="person" class="input-field">
-                    <option value="1-person">1 Person</option>
-                    <option value="2-person">2 Person</option>
-                    <option value="3-person">3 Person</option>
-                    <option value="4-person">4 Person</option>
-                    <option value="5-person">5 Person</option>
-                    <option value="6-person">6 Person</option>
-                    <option value="7-person">7 Person</option>
-                    <option value="3-person">8 Person</option>
-                    <option value="4-person">9 Person</option>
-                    <option value="5-person">10 Person</option>
-                    <option value="6-person">11 Person</option>
-                    <option value="7-person">12 Person</option>
-                    <option value="7-person">12+ Person</option>
-                  </select>
+                  <input type="number" name="Person" placeholder="Person" autocomplete="on" class="input-field">
 
-                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  <!-- <ion-icon name="chevron-down" aria-hidden="true"></ion-icon> -->
                 </div>
 
                 <div class="icon-wrapper">
                   <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
 
-                  <input type="date" name="reservation-date" placeholder="DD-MM-YYYY" class="input-field">
+                  <input type="text" id="datepicker" name="reservation-date" placeholder="DD-MM-YYYY" class="input-field">
 
                   <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                 </div>
@@ -747,6 +732,8 @@
                     <option value="08:00pm">08 : 00 pm</option>
                     <option value="09:00pm">09 : 00 pm</option>
                     <option value="10:00pm">10 : 00 pm</option>
+                    <option value="011:00pm">11 : 00 pm</option>
+                    <option value="012:00pm">12 : 00 pm</option>
                   </select>
 
                   <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
@@ -755,15 +742,13 @@
               </div>
 
               <div>
-                <select name="Restaurant" class="input-field">
+                <!-- <select name="Restaurant" class="input-field">
                   <option value="1-Restaurant"> Restaurant Name</option>
-                  <option value="2-Restaurant"> Zest house Reservation</option>
-                  <option value="3-Restaurant"> Kansar Gujarati Thali Restaurant</option>
-                  <option value="4-Restaurant"> 3 Seventy Restaurant</option>
-                  <option value="5-Restaurant"> Thyme and Whisk Restaurant</option>
-                  <option value="6-Restaurant"> Vintage Asia Restaurant</option>
-                  <option value="7-Restaurant"> Ninis kitchen Restaurant</option>
-                </select>
+                  
+                </select> -->
+
+                <input type="text" name="reservation-date" placeholder=" Restaurant Name" class="input-field" id="hotelName">
+
               </div>
 
               <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
@@ -866,6 +851,9 @@
   </main>
 
 
+  
+
+
   <!-- 
     - #FOOTER
   -->
@@ -962,7 +950,19 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    function getDetails(name){
+     
+      document.getElementById('hotelName').value= name;
+    }
+    // date
 
+$( function() {
+  $( "#datepicker" ).datepicker({ minDate: 0, maxDate: "+1M" });
+} );
+  </script>
 </body>
 
 </html>
