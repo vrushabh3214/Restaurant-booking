@@ -1228,7 +1228,7 @@ body.nav-active {
 /*-----------------------------------*\
   #SPECIAL DISH
 \*-----------------------------------*/
-
+/* 
 .special-dish-content {
   padding-block: 70px;
 }
@@ -1261,7 +1261,7 @@ body.nav-active {
 
 .special-dish .btn {
   margin-inline: auto;
-}
+} */
 
 
 
@@ -1310,8 +1310,8 @@ body.nav-active {
 
 .overlay h3 {
   color: var(--gold-crayola);
-  margin-top: 80px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 15px;
   font-size: var(--fontSize-body-1);
   text-align: center;
   justify-content: center;
