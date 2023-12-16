@@ -2106,7 +2106,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
   .reservation-form {
     display: grid;
-    /* grid-template-columns: 1fr 0.5fr; */
   }
 
 
