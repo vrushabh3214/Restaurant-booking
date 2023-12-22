@@ -194,11 +194,9 @@ window.addEventListener("mousemove", function (event) {
 function sendEmail() {
   console.log(document.getElementById("e-add").value);
   Email.send({
-      // secureToken : "37099456-2a81-4640-bc2e-3f3c427317da",
       Host: "smtp.elasticemail.com",
       Username: "in.vrushabh@gmail.com",
       Password: "AB9B3D1FFEFD22EC000CF4096F2AD1ABAC45",
-      // Password: "VR@9825245038",
       To: 'team.beyond54@gmail.com',
       From: 'in.vrushabh@gmail.com',
       Subject: "This is the subject",
