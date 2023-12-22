@@ -56,16 +56,18 @@ const backTopBtn = document.querySelector("[data-back-top-btn]");
 
 // var lastScrollPos = 0;
 
-const hideHeader = function () {
-  const isScrollBottom = lastScrollPos < window.scrollY;
-  if (isScrollBottom) {
-    header.classList.add("hide");
-  } else {
-    header.classList.remove("hide");
-  }
+// const hideHeader = function () {
+//   const isScrollBottom = lastScrollPos < window.scrollY;
+//   if (isScrollBottom) {
+//     header.classList.add("hide");
+//     document.querySelector("body").classList.remove("nav-active");
+    
+//   } else {
+//     header.classList.remove("hide");
+//   }
 
-  lastScrollPos = window.scrollY;
-}
+//   lastScrollPos = window.scrollY;
+// }
 
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 50) {
@@ -187,3 +189,28 @@ window.addEventListener("mousemove", function (event) {
 
 });
 
+
+// form - email
+function sendEmail() {
+  console.log(document.getElementById("e-add").value);
+  Email.send({
+      // secureToken : "37099456-2a81-4640-bc2e-3f3c427317da",
+      Host: "smtp.elasticemail.com",
+      Username: "in.vrushabh@gmail.com",
+      Password: "AB9B3D1FFEFD22EC000CF4096F2AD1ABAC45",
+      // Password: "VR@9825245038",
+      To: 'team.beyond54@gmail.com',
+      From: 'in.vrushabh@gmail.com',
+      Subject: "This is the subject",
+      Body: "Name: " + document.getElementById("name").value
+      + "<br> Phone No: " + document.getElementById("phone").value
+      + "<br> Person: " + document.getElementById("person").value
+      + "<br> Booking Date: " + document.getElementById("datepicker").value
+      + "<br> Booking time: " + document.getElementById("time").value
+      + "<br> Restaurant Name: " + document.getElementById("hotelName").value
+      + "<br> Email: " + document.getElementById("e-add").value
+      + "<br> Message: " + document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Succesfully")
+  ).catch(error => alert(error));
+}
