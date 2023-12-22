@@ -284,7 +284,8 @@
           <h2 class="headline-1 section-title">We Offer Top Notch</h2>
 
           <p class="section-text">
-            Indulge in our restaurant's pride – top-notch dishes by skilled chefs, crafted with the finest local ingredients. Our diverse menu showcases exceptional flavors in signature dishes.
+            Indulge in our restaurant's pride – top-notch dishes by skilled chefs, crafted with the finest local
+            ingredients. Our diverse menu showcases exceptional flavors in signature dishes.
           </p>
 
           <ul class="grid-list">
@@ -377,7 +378,11 @@
             <h2 class="headline-1 section-title">"Unlock The Perfect Dining Experience"</h2>
 
             <p class="section-text">
-              an invitation to explore culinary excellence at our restaurant. Delight in top-notch dishes crafted by skilled chefs using premium, locally sourced ingredients. Our diverse menu showcases signature dishes renowned for exceptional flavors. Amidst a delightful ambiance and visually stunning presentations, we extend an invitation to join us on a culinary journey, promising a premium dining experience that transcends expectations and unlocks the door to culinary perfection.
+              an invitation to explore culinary excellence at our restaurant. Delight in top-notch dishes crafted by
+              skilled chefs using premium, locally sourced ingredients. Our diverse menu showcases signature dishes
+              renowned for exceptional flavors. Amidst a delightful ambiance and visually stunning presentations, we
+              extend an invitation to join us on a culinary journey, promising a premium dining experience that
+              transcends expectations and unlocks the door to culinary perfection.
             </p>
 
             <div class="contact-label">Book Through Call</div>
@@ -450,7 +455,7 @@
                         <span class="text text-1">Location</span>
                         <span class="text text-2">Location</span>
                       </a>
-                      <a href="#Booking" class="btn btn-primary"  onclick="return getDetails('Kansar Restaurant')">
+                      <a href="#Booking" class="btn btn-primary" onclick="return getDetails('Kansar Restaurant')">
                         <span class="text text-1">Book table</span>
                         <span class="text text-2">Book table</span>
                       </a>
@@ -534,7 +539,7 @@
                         <span class="text text-1">Location</span>
                         <span class="text text-2">Location</span>
                       </a>
-                      <a href="#Booking" class="btn btn-primary"  onclick="return getDetails('Ninis Kitchen')">
+                      <a href="#Booking" class="btn btn-primary" onclick="return getDetails('Ninis Kitchen')">
                         <span class="text text-1">Book table</span>
                         <span class="text text-2">Book table</span>
                       </a>
@@ -571,7 +576,8 @@
           <div class="quote">”</div>
 
           <p class="headline-2 testi-text">
-            Last night I was going to restaurant With online table reservation through this website. This website is Esay to access & services are good.
+            Last night I was going to restaurant With online table reservation through this website. This website is
+            Esay to access & services are good.
           </p>
 
           <div class="wrapper">
@@ -595,12 +601,12 @@
         - #RESERVATION
       -->
 
-      <section class="reservation" id="Booking">
+      <section class="reservation" id="Table">
         <div class="container">
 
           <div class="form reservation-form bg-black-10">
 
-            <form action="" class="form-left" id="Table">
+            <form onsubmit="sendEmail(); reset(); return false;" class="form-left">
 
               <h2 class="headline-1 text-center">Online Reservation</h2>
 
@@ -610,9 +616,10 @@
               </p>
 
               <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Your Name" autocomplete="on" class="input-field">
+                <input type="text" name="name" placeholder="Your Name" autocomplete="on" class="input-field" id="name">
 
-                <input type="number" name="phone" placeholder="Phone Number" autocomplete="on" class="input-field">
+                <input type="number" name="phone" placeholder="Phone Number" autocomplete="on" class="input-field"
+                  id="phone">
               </div>
 
               <div class="input-wrapper">
@@ -620,14 +627,16 @@
                 <div class="icon-wrapper">
                   <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-                  <input type="number" name="Person" placeholder="Person" autocomplete="on" class="input-field" min="1" required>
+                  <input type="number" name="Person" placeholder="Person" autocomplete="on" class="input-field" min="1"
+                    id="person" required>
 
                 </div>
 
                 <div class="icon-wrapper">
                   <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
 
-                  <input type="text" id="datepicker" name="reservation-date" placeholder="DD-MM-YYYY" class="input-field">
+                  <input type="text" id="datepicker" name="reservation-date" placeholder="DD-MM-YYYY"
+                    class="input-field">
 
                   <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                 </div>
@@ -635,18 +644,23 @@
                 <div class="icon-wrapper">
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-                  <input type="time"  name="reservation-time" placeholder="hh-mm-ss" class="input-field input-field-1">
+                  <input type="time" name="reservation-time" placeholder="hh-mm-ss" class="input-field input-field-1"
+                    id="time">
 
                 </div>
 
               </div>
 
-              <div>
-                <input type="text" name="reservation-date" placeholder=" Restaurant Name" class="input-field" id="hotelName">
+              <div class="input-wrapper">
+                <input type="text" name="Restaurant-Name" placeholder=" Restaurant Name" class="input-field"
+                  id="hotelName">
+
+                <input type="Email" name="Email" placeholder="Email" autocomplete="on" class="input-field" id="e-add">
 
               </div>
 
-              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"
+                id="message"></textarea>
 
               <button type="submit" class="btn btn-secondary">
                 <span class="text text-1" style="text-align: center;">Book A Table</span>
@@ -684,7 +698,8 @@
 
                 <h3 class="title-2 card-title">Hygienic Food</h3>
 
-                <p class="label-1 card-text">We ensures cleanliness and sanitary conditions throughout the entire food production process.</p>
+                <p class="label-1 card-text">We ensures cleanliness and sanitary conditions throughout the entire food
+                  production process.</p>
 
               </div>
             </li>
@@ -698,7 +713,8 @@
 
                 <h3 class="title-2 card-title">Fresh Environment</h3>
 
-                <p class="label-1 card-text">A fresh environment prioritizes cleanliness, enhancing the overall dining experience with a pleasant atmosphere.
+                <p class="label-1 card-text">A fresh environment prioritizes cleanliness, enhancing the overall dining
+                  experience with a pleasant atmosphere.
 
 
                   .</p>
@@ -715,7 +731,8 @@
 
                 <h3 class="title-2 card-title">Skilled Chefs</h3>
 
-                <p class="label-1 card-text">A skilled chef in a restaurant brings culinary expertise, creativity, and precision to create exceptional dishes.</p>
+                <p class="label-1 card-text">A skilled chef in a restaurant brings culinary expertise, creativity, and
+                  precision to create exceptional dishes.</p>
 
               </div>
             </li>
@@ -729,7 +746,8 @@
 
                 <h3 class="title-2 card-title">Event & Party</h3>
 
-                <p class="label-1 card-text">Customer can also Book Restaurant for their memorable special event & party with easiest way.</p>
+                <p class="label-1 card-text">Customer can also Book Restaurant for their memorable special event & party
+                  with easiest way.</p>
 
               </div>
             </li>
@@ -749,7 +767,7 @@
   </main>
 
 
-  
+
 
 
   <!-- 
@@ -765,7 +783,8 @@
         <div class="footer-brand has-before has-after">
 
           <a href="#" class="logo">
-            <img src="./assets/images/Cravehub-logos_transparent.png" width="160" height="50" loading="lazy" alt="Beyond home">
+            <img src="./assets/images/Cravehub-logos_transparent.png" width="160" height="50" loading="lazy"
+              alt="Beyond home">
           </a>
 
           <a href="mailto:booking@grilli.com" class="body-4 contact-link">booking@beyond.com</a>
@@ -846,20 +865,22 @@
   <!-- 
     - ionicon link
   -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script>
-    function getDetails(name){
-     
-      document.getElementById('hotelName').value= name;
+    function getDetails(name) {
+
+      document.getElementById('hotelName').value = name;
     }
     // date
 
-$( function() {
-  $( "#datepicker" ).datepicker({ minDate: 0, maxDate: "+1M" });
-} );
+    $(function () {
+      $("#datepicker").datepicker({ minDate: 0, maxDate: "+1M" });
+    });
   </script>
 </body>
 
