@@ -8,7 +8,7 @@
   <!-- 
     - Cravehub-logos
   -->
-  <link rel="shortcut icon" href="./assets/images/Cravehub-logos_transparent.png" type="image/png+xml">
+  <link rel="shortcut icon" href="./assets/images/table-trove-logo.png" type="image/png+xml">
 
   <!-- 
     - google font link
@@ -92,10 +92,10 @@
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/Cravehub-logos_transparent.png" width="120px" height="50" alt="Beyond - Home">
+        <img src="./assets/images/table-trove-logo.png" width="160px" height="50" alt="table-trove - Home">
       </a>
       <a href="#" class="logo-1">
-        <img src="./assets/images/Cravehub-logos_transparent.png" width="120px" height="50" alt="Beyond - Home">
+        <img src="./assets/images/table-trove-logo.png" width="120px" height="50" alt="table-trove - Home">
       </a>
 
       <nav class="navbar" data-navbar>
@@ -105,7 +105,7 @@
         </button>
 
         <a href="#" class="logo-2">
-          <img src="./assets/images/Cravehub-logos_transparent.png" width="160" height="50" alt="Beyond - Home">
+          <img src="./assets/images/table-trove-logo.png" width="200px" height="50" alt="table-trove - Home">
         </a>
 
         <ul class="navbar-list">
@@ -434,7 +434,7 @@
                         <span class="text text-1">Location</span>
                         <span class="text text-2">Location</span>
                       </a>
-                      <a href="#Booking" class="btn btn-primary" onclick="return getDetails('Rati Kaka ni Bhajipav & Restaurant')">
+                      <a href="#Table" class="btn btn-primary" onclick="return getDetails('Rati Kaka ni Bhajipav & Restaurant')">
                         <span class="text text-1">Book table</span>
                         <span class="text text-2">Book table</span>
                       </a>
@@ -455,7 +455,7 @@
                         <span class="text text-1">Location</span>
                         <span class="text text-2">Location</span>
                       </a>
-                      <a href="#Booking" class="btn btn-primary"  onclick="return getDetails('Rati Kaka ni Bhajipav & Dhosa')">
+                      <a href="#Table" class="btn btn-primary"  onclick="return getDetails('Rati Kaka ni Bhajipav & Dhosa')">
                         <span class="text text-1">Book table</span>
                         <span class="text text-2">Book table</span>
                       </a>
@@ -476,7 +476,7 @@
                         <span class="text text-1">Location</span>
                         <span class="text text-2">Location</span>
                       </a>
-                      <a href="#Booking" class="btn btn-primary" onclick="return getDetails('Ratikaka Ni Bhajipav & Restaurant')">
+                      <a href="#Table" class="btn btn-primary" onclick="return getDetails('Ratikaka Ni Bhajipav & Restaurant')">
                         <span class="text text-1">Book table</span>
                         <span class="text text-2">Book table</span>
                       </a>
@@ -497,7 +497,7 @@
                         <span class="text text-1">Location</span>
                         <span class="text text-2">Location</span>
                       </a>
-                      <a href="#Booking" class="btn btn-primary" onclick="return getDetails('Kaka Ni Bhajipav & Fast-food')">
+                      <a href="#Table" class="btn btn-primary"  onclick="return getDetails('Kaka Ni Bhajipav & Fast-food')">
                         <span class="text text-1">Book table</span>
                         <span class="text text-2">Book table</span>
                       </a>
@@ -518,7 +518,7 @@
                         <span class="text text-1">Location</span>
                         <span class="text text-2">Location</span>
                       </a>
-                      <a href="#Booking" class="btn btn-primary" onclick="return getDetails('Dosa Charcoal Garden Restaurant')">
+                      <a href="#Table" class="btn btn-primary" onclick="return getDetails('Dosa Charcoal Garden Restaurant')">
                         <span class="text text-1">Book table</span>
                         <span class="text text-2">Book table</span>
                       </a>
@@ -539,7 +539,7 @@
                         <span class="text text-1">Location</span>
                         <span class="text text-2">Location</span>
                       </a>
-                      <a href="#Booking" class="btn btn-primary"  onclick="return getDetails('Fannito Pizza')">
+                      <a href="#Table" class="btn btn-primary"  onclick="return getDetails('Fannito Pizza')">
                         <span class="text text-1">Book table</span>
                         <span class="text text-2">Book table</span>
                       </a>
@@ -648,8 +648,18 @@
               </div>
 
               <div class="input-wrapper">
-                <input type="text" name="Restaurant-Name" placeholder=" Restaurant Name" class="input-field"
-                  id="hotelName" required>
+                <!-- <input type="select" name="Restaurant-Name" placeholder=" Restaurant Name" class="input-field"
+                  id="hotelName" required> -->
+                  <select type="select" name="Restaurant-Name" class="input-field"  required>
+                    <option id="hotelName"></option>
+                    <option value="1-Restaurant"> Restaurant Name</option>
+                    <option value="2-Restaurant"> Rati Kaka ni Bhajipav & Restaurant</option>
+                    <option value="3-Restaurant"> Rati Kaka ni Bhajipav & Dhosa</option>
+                    <option value="4-Restaurant"> Ratikaka Ni Bhajipav & Restaurant</option>
+                    <option value="5-Restaurant"> Kaka Ni Bhajipav & Fast-food</option>
+                    <option value="6-Restaurant"> Dosa Charcoal Garden Restaurant</option>
+                    <option value="7-Restaurant"> Fannito Pizza</option>
+                  </select>
 
                 <input type="Email" name="Email" placeholder="Email" autocomplete="on" class="input-field" id="e-add" required>
 
@@ -779,7 +789,7 @@
         <div class="footer-brand has-before has-after">
 
           <a href="#" class="logo">
-            <img src="./assets/images/Cravehub-logos_transparent.png" width="160" height="50" loading="lazy"
+            <img src="./assets/images/table-trove-logo.png" width="250px" height="50" loading="lazy"
               alt="Beyond home">
           </a>
 
@@ -870,7 +880,7 @@
   <script>
     function getDetails(name) {
 
-      document.getElementById('hotelName').value = name;
+      document.getElementById('hotelName').innerHTML = name;
     }
     // date
 

@@ -73,7 +73,7 @@ window.addEventListener("scroll", function () {
   if (window.scrollY >= 50) {
     header.classList.add("active");
     backTopBtn.classList.add("active");
-    hideHeader();
+    // hideHeader();
   } else {
     header.classList.remove("active");
     backTopBtn.classList.remove("active");
